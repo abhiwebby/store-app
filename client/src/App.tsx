@@ -5,9 +5,8 @@ import Header from "./components/Header";
 function App() {
   return (
     <div className="App">
-      <h1>Hello store app...</h1>
-      <button className="btn btn-danger">Submit</button>
       <Header />
+      <h4>welcome to shopping</h4>
       <Footer />
     </div>
   );
