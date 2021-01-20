@@ -18,3 +18,22 @@ code {
   background: #000000;
   color: #fff;
 }
+.bgBlack2{
+  background: #343a40!important
+}
+.price_tag{
+  font-size: 20px;
+  font-weight: 700;
+}
+.rating{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+.rating span i {
+  color:#d64a4a;
+}
+.reviews{
+  float: right;
+}
