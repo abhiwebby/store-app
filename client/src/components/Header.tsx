@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   Container,
   Row,
@@ -16,7 +17,9 @@ const Header = () => {
       <Row className="justify-content-md-center">
         <Col lg="12" md="auto">
           <Navbar bg="dark" variant="dark" expand="lg">
-            <Navbar.Brand href="/">Store App</Navbar.Brand>
+            <Link to="/">
+              <Navbar.Brand>Store App</Navbar.Brand>
+            </Link>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Form inline className="mr-4">
@@ -28,12 +31,12 @@ const Header = () => {
                 <Button variant="outline-success">Search</Button>
               </Form>
               <Nav className="ml-4">
-                <Nav.Link href="/cart">
+                <Link to="/cart">
                   <i className="fa fa-cart-plus" aria-hidden="true"></i> Cart
-                </Nav.Link>
-                <Nav.Link href="/login">
+                </Link>
+                <Link to="/login">
                   <i className="fa fa-user" aria-hidden="true"></i> Sign In
-                </Nav.Link>
+                </Link>
               </Nav>
             </Navbar.Collapse>
           </Navbar>
